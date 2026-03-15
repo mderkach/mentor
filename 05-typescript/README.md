@@ -2,7 +2,15 @@
 
 В этом разделе ты изучаешь TypeScript: типы, функции, интерфейсы, обобщения, настройку компилятора и работу с данными в приложении.
 
-Здесь разбираются:
+Важно: TypeScript не заменяет JavaScript и сам по себе не проверяет внешние данные. Если ты не понимаешь, что реально происходит в коде во время выполнения, типы быстро превращаются в `as any`.
+
+> 🚧 🚧 🚧
+>
+> Раздел в развитии. Состав уроков и глубина тем будут еще уточняться.
+>
+> 🚧 🚧 🚧
+
+## Что здесь разбирается
 
 - базовые типы, функции и состояния;
 - моделирование данных из API и внутри приложения;
@@ -11,8 +19,6 @@
 - `tsconfig`, модули, декларации и сборка;
 - проверка входных данных и работа с внешними интеграциями;
 - типы на границах пакетов, библиотек и больших проектов.
-
-Важно: TypeScript не заменяет JavaScript и сам по себе не проверяет внешние данные. Если ты не понимаешь, что реально происходит в коде во время выполнения, типы быстро превращаются в `as any`.
 
 ---
 
@@ -66,7 +72,7 @@
 
 ---
 
-## Связь С Соседними Разделами
+## Связь с соседними разделами
 
 | Тема | Что изучаем здесь | Куда идти за продолжением |
 |---|---|---|
@@ -108,12 +114,12 @@
 
 ### 🟣 Senior и Senior+
 
-- [5.8 Практики типобезопасности и runtime-схемы](./40-senior/5.8-практики-типобезопасности-и-runtime-схемы.md)
-- [5.9 Large-scale TypeScript: project references, composite builds и package boundaries](./40-senior/5.9-large-scale-typescript-project-references-composite-builds-и-package-boundaries.md)
+- [5.8 Практики типобезопасности и проверка данных во время выполнения](./40-senior/5.8-практики-типобезопасности-и-runtime-схемы.md)
+- [5.9 TypeScript на большом проекте: project references, composite builds и границы пакетов](./40-senior/5.9-large-scale-typescript-project-references-composite-builds-и-package-boundaries.md)
 - [5.10 Public API контракты и типизация библиотек](./40-senior/5.10-public-api-контракты-и-типизация-библиотек.md)
 - [5.11 Migration strategy для legacy JavaScript и TypeScript](./40-senior/5.11-migration-strategy-для-legacy-javascript-и-typescript.md)
 - [5.12 Schema-driven contracts и типизация внешних интеграций](./40-senior/5.12-schema-driven-contracts-и-типизация-внешних-интеграций.md)
-- [5.13 Boundary types в monorepo и microfrontends](./40-senior/5.13-boundary-types-в-monorepo-и-microfrontends.md)
+- [5.13 Типы на границах пакетов, монорепы и микрофронтендов](./40-senior/5.13-boundary-types-в-monorepo-и-microfrontends.md)
 
 ## ✅ Ожидания по уровням
 
@@ -126,7 +132,7 @@
 
 ---
 
-## Senior Уровень
+## Senior-уровень
 
 Senior уровень по TypeScript разбит на несколько уроков, потому что это уже не одна тема, а набор отдельных практик:
 
