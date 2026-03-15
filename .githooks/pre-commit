@@ -1,0 +1,14 @@
+#!/bin/sh
+
+set -eu
+
+REPO_ROOT="$(git rev-parse --show-toplevel)"
+cd "$REPO_ROOT"
+
+if ! command -v python3 >/dev/null 2>&1; then
+  echo "pre-commit: нужен python3 для проверки lesson metadata" >&2
+  exit 1
+fi
+
+echo "pre-commit: validating lesson metadata"
+python3 scripts/lesson_frontmatter.py validate

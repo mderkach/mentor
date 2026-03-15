@@ -1,77 +1,151 @@
 # 🧩 6. UI Frameworks
 
-Компонентный подход, state, routing и практики зрелой UI-разработки.
+В этом разделе разбирается разработка интерфейсов на UI-фреймворках: компоненты, реактивность, маршрутизация, формы, состояние и обновление интерфейса.
+
+Материал разведен по трекам внутри каждого грейда:
+
+- `core` — общая модель темы без привязки к одному framework;
+- `react` — отдельный React-путь;
+- `vue` — отдельные Vue-заглушки, чтобы Vue не торчал внутри React-уроков.
+
+`core` нужен, чтобы собрать общую инженерную модель. Framework-specific практика вынесена отдельно, чтобы React, Vue и общая теория не смешивались в одном уроке.
 
 ---
 
-В этом разделе:
-- **9** компетенций
-- **435** атомарных навыков
+## Статус раздела
 
-## 📚 Навигация по разделу
+- Домен: `🟡 Частично готов`
+- Уроки: `🟡 Частично готовы`
+- Задачи: `⚪ В подготовке`
+- Материалы: `🟡 Частично готовы`
 
-### 6.1 React: базовые принципы и компонентная модель
-→ [Открыть тему](./6.1-react-базовые-принципы-и-компонентная-модель.md)
+## С чего начать
 
-- Навыков: **70**
-
-### 6.2 React: hooks и жизненный цикл
-→ [Открыть тему](./6.2-react-hooks-и-жизненный-цикл.md)
-
-- Навыков: **85**
-
-### 6.3 React: композиция и паттерны компонентов
-→ [Открыть тему](./6.3-react-композиция-и-паттерны-компонентов.md)
-
-- Навыков: **70**
-
-### 6.4 Routing
-→ [Открыть тему](./6.4-routing.md)
-
-- Навыков: **35**
-
-### 6.5 HTTP, data fetching и server state
-→ [Открыть тему](./6.5-http-data-fetching-и-server-state.md)
-
-- Навыков: **50**
-
-### 6.6 State management
-→ [Открыть тему](./6.6-state-management.md)
-
-- Навыков: **45**
-
-### 6.7 Формы и валидация
-→ [Открыть тему](./6.7-формы-и-валидация.md)
-
-- Навыков: **35**
-
-### 6.8 Storybook и UI разработка
-→ [Открыть тему](./6.8-storybook-и-ui-разработка.md)
-
-- Навыков: **30**
-
-### 6.9 Оптимизация React-приложений
-→ [Открыть тему](./6.9-оптимизация-react-приложений.md)
-
-- Навыков: **15**
+- Сначала проходи `core`, чтобы собрать общую модель UI framework-ов.
+- Если идешь в React, переходи в React-трек после core-уроков.
+- Vue-слой пока в переходном состоянии, поэтому не считай этот домен полностью собранным.
 
 ---
 
-## 🎯 Как проходить раздел
+## Как читать раздел
 
-1. Выбери 1-2 компетенции под текущие задачи проекта.
-2. Закрой ключевые навыки по порядку: понимание -> применение -> проверка.
-3. Закрепи результат на практических задачах из [TASKS.md](../TASKS.md).
+- Сначала проходить `core`, чтобы собрать общую модель.
+- Потом идти в нужный framework-трек: сейчас полноценно заполнен только `React`.
+- Vue пока вынесен в отдельный стартовый слой, чтобы не смешиваться с React внутри тех же уроков.
+- Сравнения с Angular / Svelte / Solid остаются в `core`, потому что это часть общей картины, а не отдельный основной трек этой итерации.
 
-## 📈 Ожидания по уровням
+---
 
-| Уровень | Ожидания |
+## Структура папок
+
+```text
+06-ui-frameworks/
+  10-intern/
+    core/
+    react/
+    vue/
+  20-junior/
+    core/
+    react/
+    vue/
+  30-middle/
+    core/
+    react/
+    vue/
+  40-senior/
+    core/
+    react/
+    vue/
+```
+
+---
+
+## Базовый слой
+
+### 🟢 Стажер
+
+- [6.1 Компонентная модель UI framework-ов](./10-intern/core/6.1-компонентная-модель-ui-framework-ов.md)
+
+### 🟡 Junior
+
+- [6.2 Update cycle и реактивность UI framework-ов](./20-junior/core/6.2-update-cycle-и-реактивность-ui-framework-ов.md)
+- [6.3 Routing architecture](./20-junior/core/6.3-routing-architecture.md)
+- [6.4 Формы и валидация](./20-junior/core/6.4-формы-и-валидация.md)
+
+### 🔵 Middle
+
+- [6.5 Композиция компонентов и архитектурные паттерны](./30-middle/core/6.5-композиция-компонентов-и-архитектурные-паттерны.md)
+- [6.6 Server state и data fetching](./30-middle/core/6.6-server-state-и-data-fetching.md)
+- [6.7 Модели управления состоянием](./30-middle/core/6.7-модели-управления-состоянием.md)
+
+### 🟣 Senior / Senior+
+
+- [6.8 Cost model UI framework-ов](./40-senior/core/6.8-cost-model-ui-framework-ов.md)
+
+---
+
+## Маршрут React
+
+### 🟢 Стажер
+
+- [6.1 React: базовые принципы и компонентная модель](./10-intern/react/6.1-react-базовые-принципы-и-компонентная-модель.md)
+
+### 🟡 Junior
+
+- [6.2 React: hooks и жизненный цикл](./20-junior/react/6.2-react-hooks-и-жизненный-цикл.md)
+- [6.3 React Router: routing architecture](./20-junior/react/6.3-react-router-и-routing-architecture.md)
+- [6.4 React: формы и валидация](./20-junior/react/6.4-react-формы-и-валидация.md)
+
+### 🔵 Middle
+
+- [6.5 React: композиция и паттерны компонентов](./30-middle/react/6.5-react-композиция-и-паттерны-компонентов.md)
+- [6.6 React: server state и data fetching](./30-middle/react/6.6-react-data-fetching-и-server-state.md)
+- [6.7 React: state management](./30-middle/react/6.7-react-state-management.md)
+
+### 🟣 Senior / Senior+
+
+- [6.8 React: оптимизация приложений](./40-senior/react/6.8-react-оптимизация-приложений.md)
+
+---
+
+## Маршрут Vue
+
+Пока это не полноценный Vue-трек, а отдельный стартовый слой, чтобы Vue-материал не был смешан с React.
+
+### 🟢 Стажер
+
+- [6.1 Vue: компонентная модель](./10-intern/vue/6.1-vue-компонентная-модель-todo.md)
+
+### 🟡 Junior
+
+- [6.2 Vue: reactivity, computed, watch и composables](./20-junior/vue/6.2-vue-reactivity-и-composition-api-todo.md)
+- [6.3 Vue Router: routing architecture](./20-junior/vue/6.3-vue-router-todo.md)
+- [6.4 Vue: формы и валидация](./20-junior/vue/6.4-vue-формы-и-валидация-todo.md)
+
+### 🔵 Middle
+
+- [6.5 Vue: slots, composables и provide/inject](./30-middle/vue/6.5-vue-slots-и-composables-todo.md)
+- [6.6 Vue / Nuxt: server state и data fetching](./30-middle/vue/6.6-vue-nuxt-server-state-todo.md)
+- [6.7 Vue: reactive state, composables и Pinia](./30-middle/vue/6.7-vue-reactive-state-и-pinia-todo.md)
+
+### 🟣 Senior / Senior+
+
+- [6.8 Vue: оптимизация приложений](./40-senior/vue/6.8-vue-оптимизация-todo.md)
+
+---
+
+## Вне раздела
+
+- Storybook, interaction tests и visual regression вынесены в [9.2 Storybook, visual regression и interaction tests](../09-тестирование/40-senior/9.2-storybook-visual-regression-и-interaction-tests.md).
+
+## Ожидания по уровням
+
+| Уровень | Что должен уметь |
 |---|---|
-| Intern | Пишет простые компоненты, обрабатывает props/state и базовые формы. |
-| Junior | Уверенно работает с hooks, routing, forms, data fetching и разбиением интерфейса на компоненты. |
-| Middle | Проектирует feature-level composition, выбирает state boundaries, query caching и тестируемые patterns. |
-| Senior | Оптимизирует рендер, проектирует UI platform, Storybook, reusable patterns и SSR/hydration trade-offs. |
-| Architect | Определяет framework strategy, state strategy, server/client boundaries и migration path. |
+| Стажер | Понимать общую компонентную модель и уметь перейти в конкретный React-слой без смешения с другими framework-ами. |
+| Junior | Различать общую framework-задачу и React-реализацию в hooks, routing и формах. |
+| Middle | Проектировать composition patterns, state/server-state boundaries и reusable abstractions на уровне модели и отдельно на уровне React-реализации. |
+| Senior / Senior+ | Принимать решения по UI-практикам команды и оптимизации UI как системы, не смешивая core-модель и framework-specific слой. |
 
 ---
 
